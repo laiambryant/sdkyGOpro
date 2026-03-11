@@ -2,17 +2,17 @@
 
 A Go SDK for the YGOProDeck API.
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/sdkyGOprodeck.svg)](https://pkg.go.dev/github.com/laiambryant/sdkyGOprodeck)
-[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/sdkyGOprodeck)](https://goreportcard.com/report/github.com/laiambryant/sdkyGOprodeck)
-[![GitHub license](https://img.shields.io/github/license/laiambryant/ygoprodeck.svg)](https://github.com/laiambryant/sdkyGOprodeck/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/laiambryant/ygoprodeck.svg)](https://github.com/laiambryant/sdkyGOprodeck/issues)
-[![GitHub stars](https://img.shields.io/github/stars/laiambryant/ygoprodeck.svg)](https://github.com/laiambryant/sdkyGOprodeck/stargazers)
-[![Coverage Status](https://coveralls.io/repos/github/laiambryant/ygoprodeck/badge.svg)](https://coveralls.io/github/laiambryant/ygoprodeck)
+[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/sdkygopro.svg)](https://pkg.go.dev/github.com/laiambryant/sdkygopro)
+[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/sdkygopro)](https://goreportcard.com/report/github.com/laiambryant/sdkygopro)
+[![GitHub license](https://img.shields.io/github/license/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/issues)
+[![GitHub stars](https://img.shields.io/github/stars/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/stargazers)
+[![Coverage Status](https://coveralls.io/repos/github/laiambryant/sdkygopro/badge.svg)](https://coveralls.io/github/laiambryant/sdkygopro)
 
 ## Installation
 
 ```bash
-go get github.com/laiambryant/sdkyGOprodeck
+go get github.com/laiambryant/sdkygopro
 ```
 
 ## Quick Start

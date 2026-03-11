@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/laiambryant/sdkyGOprodeck/client"
+	"github.com/laiambryant/sdkygopro/client"
 )
 
 // Endpoint is a generic HTTP endpoint that fetches a path and unmarshals the

@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/laiambryant/sdkyGOprodeck/client"
-	"github.com/laiambryant/sdkyGOprodeck/endpoint"
-	"github.com/laiambryant/sdkyGOprodeck/models"
-	"github.com/laiambryant/sdkyGOprodeck/query"
+	"github.com/laiambryant/sdkygopro/client"
+	"github.com/laiambryant/sdkygopro/endpoint"
+	"github.com/laiambryant/sdkygopro/models"
+	"github.com/laiambryant/sdkygopro/query"
 )
 
 // YGOProDeck is the top-level SDK client. Create one with [New] and call its

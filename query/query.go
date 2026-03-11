@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/laiambryant/sdkyGOprodeck/enums"
+	"github.com/laiambryant/sdkygopro/enums"
 )
 
 // Query is a fluent builder for /cardinfo.php query parameters. Create one

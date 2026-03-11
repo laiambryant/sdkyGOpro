@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/laiambryant/sdkyGOprodeck/client"
+	"github.com/laiambryant/sdkygopro/client"
 )
 
 type fakeHTTP struct {

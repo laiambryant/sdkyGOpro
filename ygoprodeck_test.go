@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/laiambryant/sdkyGOprodeck/client"
-	"github.com/laiambryant/sdkyGOprodeck/query"
+	"github.com/laiambryant/sdkygopro/client"
+	"github.com/laiambryant/sdkygopro/query"
 )
 
 type fakeHTTPClient struct {
