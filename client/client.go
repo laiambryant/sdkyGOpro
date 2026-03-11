@@ -7,17 +7,29 @@ import (
 	"net/http"
 )
 
+// HTTPClient is the interface satisfied by any HTTP client that can be injected
+// into [Client], including *http.Client and test doubles.
 type HTTPClient interface {
 	Do(req *http.Request) (*http.Response, error)
 }
 
+// Client is the HTTP client used by the SDK. BaseURL, HTTP, and UserAgent are
+// publicly accessible so that callers can inspect the effective configuration,
+// but they should normally be set through the functional options passed to
+// [NewHTTPClient].
 type Client struct {
-	BaseURL   string
-	HTTP      HTTPClient
+	// BaseURL is prepended to every path passed to [Client.Get].
+	BaseURL string
+	// HTTP is the underlying HTTP client used to execute requests.
+	HTTP HTTPClient
+	// UserAgent is sent as the User-Agent header on every request.
 	UserAgent string
 	cache     *Cache
 }
 
+// NewHTTPClient creates a Client with the YGOProDeck API base URL and the
+// ygoprodeck-go-sdk user-agent. If httpClient is nil, http.DefaultClient is
+// used. Provide [Option] values to override any of these defaults.
 func NewHTTPClient(httpClient HTTPClient, opts ...Option) *Client {
 	c := &Client{
 		BaseURL:   "https://db.ygoprodeck.com/api/v7",
@@ -34,6 +46,14 @@ func NewHTTPClient(httpClient HTTPClient, opts ...Option) *Client {
 	return c
 }
 
+// Get performs a GET request for BaseURL+path. It returns the raw response
+// body on success. Responses are served from the in-memory cache when caching
+// is enabled and the entry has not expired.
+//
+// Errors:
+//   - [ErrNotFound] for HTTP 404
+//   - [*HTTPError] for any other non-2xx status
+//   - [*RequestError] for network or I/O failures
 func (c *Client) Get(ctx context.Context, path string) ([]byte, error) {
 	fullURL := c.BaseURL + path
 	if c.cache != nil {

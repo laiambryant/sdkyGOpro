@@ -10,12 +10,15 @@ type cacheEntry struct {
 	expiresAt time.Time
 }
 
+// Cache is a thread-safe in-memory byte cache with TTL-based expiration.
+// Use [NewCache] to create one and [WithCache] to attach it to a [Client].
 type Cache struct {
 	mu    sync.RWMutex
 	items map[string]cacheEntry
 	ttl   time.Duration
 }
 
+// NewCache returns a Cache whose entries expire after ttl.
 func NewCache(ttl time.Duration) *Cache {
 	return &Cache{
 		items: make(map[string]cacheEntry),
@@ -23,6 +26,8 @@ func NewCache(ttl time.Duration) *Cache {
 	}
 }
 
+// Get returns the cached bytes for key and true if a live (non-expired) entry
+// exists, or nil and false otherwise.
 func (c *Cache) Get(key string) ([]byte, bool) {
 	c.mu.RLock()
 	defer c.mu.RUnlock()
@@ -39,6 +44,7 @@ func (c *Cache) Get(key string) ([]byte, bool) {
 	return entry.data, true
 }
 
+// Set stores data under key with an expiration time of now + TTL.
 func (c *Cache) Set(key string, data []byte) {
 	c.mu.Lock()
 	defer c.mu.Unlock()

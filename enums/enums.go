@@ -1,14 +1,19 @@
 package enums
 
+// Language represents a non-English language supported by the YGOProDeck API.
+// Pass a Language value to [query.Query.Language] to request card data in that
+// language.
 type Language string
 
 const (
-	LanguageFr Language = "fr"
-	LanguageDe Language = "de"
-	LanguageIt Language = "it"
-	LanguagePt Language = "pt"
+	LanguageFr Language = "fr" // French
+	LanguageDe Language = "de" // German
+	LanguageIt Language = "it" // Italian
+	LanguagePt Language = "pt" // Portuguese
 )
 
+// Attribute represents a Yu-Gi-Oh! monster attribute as used in the
+// YGOProDeck API filter parameters.
 type Attribute string
 
 const (
@@ -21,18 +26,20 @@ const (
 	AttributeDivine Attribute = "divine"
 )
 
+// Format represents a Yu-Gi-Oh! game format recognised by the YGOProDeck API.
 type Format string
 
 const (
-	FormatTCG       Format = "tcg"
-	FormatGoat      Format = "goat"
-	FormatOCGGoat   Format = "ocg goat"
-	FormatSpeedDuel Format = "speed duel"
+	FormatTCG        Format = "tcg"
+	FormatGoat       Format = "goat"
+	FormatOCGGoat    Format = "ocg goat"
+	FormatSpeedDuel  Format = "speed duel"
 	FormatMasterDuel Format = "master duel"
-	FormatRushDuel  Format = "rush duel"
-	FormatDuelLinks Format = "duel links"
+	FormatRushDuel   Format = "rush duel"
+	FormatDuelLinks  Format = "duel links"
 )
 
+// SortOrder represents a field by which the API can sort card results.
 type SortOrder string
 
 const (
@@ -45,6 +52,8 @@ const (
 	SortNew   SortOrder = "new"
 )
 
+// Banlist identifies a Yu-Gi-Oh! banlist used to filter cards by their ban
+// status.
 type Banlist string
 
 const (
