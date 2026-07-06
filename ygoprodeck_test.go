@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/laiambryant/sdkygopro/client"
-	"github.com/laiambryant/sdkygopro/query"
+	"github.com/laiambryant/ygoprodeck-sdk-go/client"
+	"github.com/laiambryant/ygoprodeck-sdk-go/query"
 )
 
 type fakeHTTPClient struct {

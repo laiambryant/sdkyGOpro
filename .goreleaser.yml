@@ -1,4 +1,4 @@
-project_name: sdkyGOpro
+project_name: ygoprodeck-sdk-go
 builds:
   - skip: true
 checksum:

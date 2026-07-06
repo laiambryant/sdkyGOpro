@@ -2,17 +2,17 @@
 
 A Go SDK for the YGOProDeck API.
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/sdkygopro.svg)](https://pkg.go.dev/github.com/laiambryant/sdkygopro)
-[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/sdkygopro)](https://goreportcard.com/report/github.com/laiambryant/sdkygopro)
-[![GitHub license](https://img.shields.io/github/license/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/issues)
-[![GitHub stars](https://img.shields.io/github/stars/laiambryant/sdkygopro.svg)](https://github.com/laiambryant/sdkygopro/stargazers)
+[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/ygoprodeck-sdk-go.svg)](https://pkg.go.dev/github.com/laiambryant/ygoprodeck-sdk-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/ygoprodeck-sdk-go)](https://goreportcard.com/report/github.com/laiambryant/ygoprodeck-sdk-go)
+[![GitHub license](https://img.shields.io/github/license/laiambryant/ygoprodeck-sdk-go.svg)](https://github.com/laiambryant/ygoprodeck-sdk-go/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/laiambryant/ygoprodeck-sdk-go.svg)](https://github.com/laiambryant/ygoprodeck-sdk-go/issues)
+[![GitHub stars](https://img.shields.io/github/stars/laiambryant/ygoprodeck-sdk-go.svg)](https://github.com/laiambryant/ygoprodeck-sdk-go/stargazers)
 [![Coverage Status](https://coveralls.io/repos/github/laiambryant/sdkyGOpro/badge.svg?branch=main)](https://coveralls.io/github/laiambryant/sdkyGOpro?branch=main)
 
 ## Installation
 
 ```bash
-go get github.com/laiambryant/sdkygopro
+go get github.com/laiambryant/ygoprodeck-sdk-go
 ```
 
 ## Quick Start

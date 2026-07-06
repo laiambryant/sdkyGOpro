@@ -26,7 +26,7 @@ const (
 	AttributeDivine Attribute = "divine"
 )
 
-// Format represents a Yu-Gi-Oh! game format recognised by the YGOProDeck API.
+// Format represents a Yu-Gi-Oh! game format recognized by the YGOProDeck API.
 type Format string
 
 const (

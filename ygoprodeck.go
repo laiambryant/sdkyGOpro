@@ -4,17 +4,17 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/laiambryant/sdkygopro/client"
-	"github.com/laiambryant/sdkygopro/endpoint"
-	"github.com/laiambryant/sdkygopro/models"
-	"github.com/laiambryant/sdkygopro/query"
+	"github.com/laiambryant/ygoprodeck-sdk-go/client"
+	"github.com/laiambryant/ygoprodeck-sdk-go/endpoint"
+	"github.com/laiambryant/ygoprodeck-sdk-go/models"
+	"github.com/laiambryant/ygoprodeck-sdk-go/query"
 )
 
 // YGOProDeck is the top-level SDK client. Create one with [New] and call its
 // methods to interact with the YGOProDeck API.
 type YGOProDeck struct {
-	// Client is the underlying HTTP client. It can be used to customise
-	// transport behaviour directly, but in most cases the functional options
+	// Client is the underlying HTTP client. It can be used to customize
+	// transport behavior directly, but in most cases the functional options
 	// passed to [New] are sufficient.
 	Client  *client.Client
 	cards   *endpoint.Endpoint[models.CardResponse]

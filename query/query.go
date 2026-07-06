@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/laiambryant/sdkygopro/enums"
+	"github.com/laiambryant/ygoprodeck-sdk-go/enums"
 )
 
 // Query is a fluent builder for /cardinfo.php query parameters. Create one
@@ -79,7 +79,7 @@ func (q *Query) ATK(val string) *Query {
 	return q
 }
 
-// DEF filters by defence value. Supports the same operator prefixes as [ATK].
+// DEF filters by defense value. Supports the same operator prefixes as [ATK].
 func (q *Query) DEF(val string) *Query {
 	q.add("def", val)
 	return q

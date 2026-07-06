@@ -17,7 +17,7 @@ type Card struct {
 	Desc string `json:"desc"`
 	// ATK is the monster's attack value. Nil for non-monster cards.
 	ATK *int `json:"atk,omitempty"`
-	// DEF is the monster's defence value. Nil for Link monsters and non-monsters.
+	// DEF is the monster's defense value. Nil for Link monsters and non-monsters.
 	DEF *int `json:"def,omitempty"`
 	// Level is the monster level or rank. Nil for non-monsters and Link monsters.
 	Level *int `json:"level,omitempty"`
